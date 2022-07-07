@@ -26,14 +26,18 @@ class App extends React.Component {
 
   render() {
     return (
+      <>
+      <h1 className='head'>Motivation Quote Generator</h1>
       <div className="app">
           <div className="card">
               <h1 className="heading">{this.state.advice}</h1>
               <button className="button" onClick={this.fetchAdvice}>
-                <span>Generate</span>
+                <span>Generate Motivation</span>
               </button>
             </div>
       </div>
+      <h5>Isaac@webdevelopment</h5>
+      </>
     );
   }
 }
