@@ -21,6 +21,7 @@
     justify-content: center;  
     text-align: center;
     padding: 20px;
+    margin: 0;
     background-color: aliceblue;
   }
   h5{
@@ -28,13 +29,14 @@
   }
   .card {
     background: whitesmoke;
-    width: 40%;
-    height: 35%;
+    width: 45%;
+    height: 45%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 25px;
+    border-radius: 20px;
    margin-top: 250px;
+   content: fit-content;
     box-shadow: 10px 10px;
   }
   @media screen and (max-width: 480px) {
@@ -44,15 +46,30 @@
         background-repeat: no-repeat;
         /* background-position: top; */
         padding:20px;
+        margin: 0;
+        height: 50%;
     }
     
   }
   @media screen and (max-width: 480px) {
+    .card{
+      margin-top: 70%;
+      width: 80%;
+      height: 80%;
+      margin-bottom: 10px;
+    }
     .card > button{
         width: 60%;
         height: 100%;
-        margin-top: 0px;
-        margin-bottom: 40px;
+        padding: 10px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .card> h1{
+      height: 60%;
+    }
+    .heading{
+      margin: 10px;
     }
   }
     
